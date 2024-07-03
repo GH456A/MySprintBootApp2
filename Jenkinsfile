@@ -11,6 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing the Project with Maven Test'
+                bat "mvnw test"
             }
         }
         
