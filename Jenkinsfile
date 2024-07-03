@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the Project with Maven Compiler'
-                bat "mvn clean install -DskipTests"
+                bat "mvnw clean install -DskipTests"
             }
         }
         stage('Test') {
