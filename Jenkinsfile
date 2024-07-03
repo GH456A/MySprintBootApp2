@@ -11,7 +11,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing the Project with Maven Test'
-                java MySprintBootApp2.java
             }
         }
         
